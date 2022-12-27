@@ -1,6 +1,6 @@
 import pytest
 
-from heysync.main import async_to_sync_func, make_sync_class
+from heysync import async_to_sync_func, make_sync_class
 
 
 async def async_func() -> str:
