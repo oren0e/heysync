@@ -1,4 +1,11 @@
 
+<a id='changelog-1.0.1'></a>
+# 1.0.1 — 2022-12-28
+
+## Added
+
+- Metadata to the package
+
 <a id='changelog-1.0.0'></a>
 # 1.0.0 — 2022-12-27
 
