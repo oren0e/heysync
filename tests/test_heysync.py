@@ -29,22 +29,22 @@ class Foo:
 
 
 def test_async_to_sync_func() -> None:
-    sync_func = async_to_sync_func(async_func)
-    result = sync_func()
+    sync_func1 = async_to_sync_func(async_func)
+    result = sync_func1()
     assert result == "Hey there"
 
 
 def test_async_to_sync_class() -> None:
     FooSync = make_sync_class(Foo)
     foo = FooSync(5)
-    result = foo.my_func()
+    result = foo.my_func()  # pylint: disable=no-member
     assert result == "Output is 5"
 
 
 def test_async_to_sync_class_context() -> None:
     FooSync = make_sync_class(Foo)
     assert FooSync.__name__ == "FooSync"
-    with FooSync(7) as foo:
+    with FooSync(7) as foo:  # pylint: disable=not-context-manager
         result = foo.my_func()
         assert result == "Output is 9"
     result = foo.my_func()
