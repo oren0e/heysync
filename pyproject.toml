@@ -34,3 +34,6 @@ line-length = 120
 [tool.scriv]
 format = "md"
 version = "literal: pyproject.toml: tool.poetry.version"
+
+[tool.pylint]
+disable="R,C"
