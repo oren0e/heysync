@@ -76,11 +76,11 @@ foo.my_func()  # Output is 8
 
 <!-- Badges: -->
 
-[pypi-image]: https://img.shields.io/pypi/v/extendedjson
-[pypi-url]: https://pypi.org/project/extendedjson/
-[build-image]: https://github.com/mathspp/extendedjson/actions/workflows/build.yaml/badge.svg
-[build-url]: https://github.com/mathspp/extendedjson/actions/workflows/build.yaml
-[coverage-image]: https://codecov.io/gh/mathspp/extendedjson/branch/main/graph/badge.svg
-[coverage-url]: https://codecov.io/gh/mathspp/extendedjson/
-[versions-image]: https://img.shields.io/pypi/pyversions/extendedjson/
-[versions-url]: https://pypi.org/project/extendedjson/
+[pypi-image]: https://img.shields.io/pypi/v/heysync
+[pypi-url]: https://pypi.org/project/heysync/
+[build-image]: https://github.com/oren0e/heysync/actions/workflows/build.yaml/badge.svg
+[build-url]: https://github.com/oren0e/heysync/actions/workflows/build.yaml
+[coverage-image]: https://codecov.io/gh/oren0e/heysync/branch/main/graph/badge.svg
+[coverage-url]: https://codecov.io/gh/oren0e/heysync/
+[versions-image]: https://img.shields.io/pypi/pyversions/heysync/
+[versions-url]: https://pypi.org/project/heysync/
