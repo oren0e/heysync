@@ -30,3 +30,7 @@ pythonpath = ["src"]
 
 [tool.black]
 line-length = 120
+
+[tool.scriv]
+format = "md"
+version = "literal: pyproject.toml: tool.poetry.version"
