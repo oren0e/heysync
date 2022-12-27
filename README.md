@@ -1,5 +1,10 @@
 # Hey, Sync!
 
+[![PyPI Version][pypi-image]][pypi-url]
+[![Build Status][build-image]][build-url]
+[![Code Coverage][coverage-image]][coverage-url]
+[![][versions-image]][versions-url]
+
 This package will allow you to convert an async function or a class (that has async methods) to a sync version.  
 The new class name will be set as `<OLD CLASS NAME>Sync`
 
@@ -68,3 +73,14 @@ with Foo(7) as foo:
     foo.my_func()  # Output is 9
 foo.my_func()  # Output is 8
 ```
+
+<!-- Badges: -->
+
+[pypi-image]: https://img.shields.io/pypi/v/extendedjson
+[pypi-url]: https://pypi.org/project/extendedjson/
+[build-image]: https://github.com/mathspp/extendedjson/actions/workflows/build.yaml/badge.svg
+[build-url]: https://github.com/mathspp/extendedjson/actions/workflows/build.yaml
+[coverage-image]: https://codecov.io/gh/mathspp/extendedjson/branch/main/graph/badge.svg
+[coverage-url]: https://codecov.io/gh/mathspp/extendedjson/
+[versions-image]: https://img.shields.io/pypi/pyversions/extendedjson/
+[versions-url]: https://pypi.org/project/extendedjson/
