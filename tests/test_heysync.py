@@ -43,6 +43,7 @@ def test_async_to_sync_class() -> None:
 
 def test_async_to_sync_class_context() -> None:
     FooSync = make_sync_class(Foo)
+    assert FooSync.__name__ == "FooSync"
     with FooSync(7) as foo:
         result = foo.my_func()
         assert result == "Output is 9"
