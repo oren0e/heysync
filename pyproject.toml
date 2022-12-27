@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "heysync"
+version = "1.0.0"
+description = "Hey, make async functions and classes sync"
+authors = ["oren0e"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+
+[tool.black]
+line-length = 120
