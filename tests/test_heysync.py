@@ -54,3 +54,12 @@ def test_async_to_sync_class_context() -> None:
 def test_sync_to_sync_err() -> None:
     with pytest.raises(TypeError, match="Function sync_func is not async function"):
         async_to_sync_func(sync_func)
+
+
+def test_decorator() -> None:
+    @async_to_sync_func
+    async def some_func() -> str:
+        return "boo"
+
+    result = some_func()
+    assert result == "boo"
