@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "heysync"
-version = "1.0.0"
+version = "1.0.1"
 description = "Hey, make async functions and classes sync"
 authors = ["oren0e"]
 readme = "README.md"
