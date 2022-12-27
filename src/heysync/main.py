@@ -1,6 +1,7 @@
 import asyncio
 from functools import wraps
 from typing import Callable
+
 from heysync.utils import get_or_create_eventloop
 
 
@@ -18,6 +19,7 @@ def async_to_sync_func(func: Callable):
         if loop.is_running():
             return coroutine
         return loop.run_until_complete(coroutine)
+
     return run
 
 
