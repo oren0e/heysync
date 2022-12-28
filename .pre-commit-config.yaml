@@ -6,12 +6,21 @@ repos:
       - id: check-yaml
       - id: end-of-file-fixer
       - id: mixed-line-ending
+
   - repo: https://github.com/psf/black
     rev: 22.12.0
     hooks:
       - id: black
+        args: ["--check"]
+
   - repo: https://github.com/PyCQA/isort
     rev: 5.11.4
     hooks:
       - id: isort
-        args: ["--profile", "black"]
+        args: ["--check", "--profile", "black"]
+
+  - repo: https://github.com/PyCQA/pylint/
+    rev: v2.15.9
+    hooks:
+      - id: pylint
+        exclude: tests/
